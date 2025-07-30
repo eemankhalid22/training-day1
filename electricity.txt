@@ -1,0 +1,23 @@
+package train;
+
+import java.util.*;
+
+public class electricity {
+	public static void main(String args[]) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("enter your electricity units:");
+		int unit = sc.nextInt();
+		System.out.println("enter your electricity costs:");
+		double cost = sc.nextDouble();
+		double amount = 0.0;
+		if (unit < 100)
+			amount = cost * unit;
+		else if (unit > 100) {
+			amount = (unit - 100) * cost;
+		}
+		System.out.println(" the electricity cost for " + unit + " units is " + amount);
+		sc.close();
+	}
+}
