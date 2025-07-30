@@ -1,0 +1,21 @@
+package train;
+
+import java.util.*;
+
+public class triangle {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("enter the stree sides of the triangle");
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int c = sc.nextInt();
+
+		if ((a + b) > c && (b + c) > a && (a + c) > b)
+			System.out.println("the triangle can be formed");
+		else
+			System.out.println("the triangle cannot be fornmed with the given dimensions");
+		sc.close();
+
+	}
+}

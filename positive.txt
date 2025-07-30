@@ -1,0 +1,24 @@
+package train;
+
+import java.util.*;
+
+public class pos {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		while (true) {
+			System.out.println("enter your number");
+			int num = sc.nextInt();
+			String s = "";
+			if (num > 0)
+				s = "positive";
+			else if (num < 0)
+				s = "negative";
+			else
+				s = "zero";
+
+			System.out.println("the number " + num + " is " + s);
+			sc.close();
+
+		}
+	}
+}

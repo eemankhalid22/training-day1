@@ -1,0 +1,23 @@
+package train;
+
+import java.util.*;
+
+public class grade {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter your marks:");
+		int num = sc.nextInt();
+		String grade = "";
+		if (num >= 85)
+			grade = "A";
+		else if (num >= 75 && num < 85)
+			grade = "B";
+		else if (num >= 65 && num < 75)
+			grade = "C";
+		else
+			grade = "D";
+
+		System.out.println("the students grade for marks " + num + " is" + grade);
+		sc.close();
+	}
+}

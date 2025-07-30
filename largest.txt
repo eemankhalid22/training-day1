@@ -1,0 +1,25 @@
+package train;
+
+import java.util.Scanner;
+
+public class largest {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter three numbers");
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int c = sc.nextInt();
+		int largestnum = 0;
+		if (a > b && a > c)
+			largestnum = a;
+
+		else if (b > a && b > c)
+			largestnum = b;
+		else
+			largestnum = c;
+
+		System.out.println("largest of three numbers:" + largestnum);
+		sc.close();
+	}
+}
